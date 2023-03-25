@@ -1,0 +1,13 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.borda-Game {
+    width: 80%;
+    height: 500px;
+    border: 1px solid #555;
+    margin: 0 auto;
+    background: linear-gradient(Black,#1C1C1C,#191970,#00008B)
+}
