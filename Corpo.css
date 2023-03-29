@@ -1,13 +1,104 @@
-*{
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
+:root{
+    --fundoDaTelaColor: #5858FA;
+    --fundoCanvasColor: #212121;
+--FontButtonColor: rgb(11, 11, 10);
+--LetraColor: #BDBDBD;
+}
+@font-face {
+    font-family: "Game";
+    src: url('https://fonts.googleapis.com/css2?family=Trispace:wght@100;200;300;400;500;600;700;800&display=swap');
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    button:focus {
+outline: 0;
+    }
+    html, body {
+        height: 100%;
+        font-family: "Trispace", sans-serif;
+        color: var(--LetraColor);
+        background-color: var(--fundoDaTelaColor);
+
+    }
+  canvas {
+    background: var(--fundoCanvasColor);
+  }  
+
+  .principal{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #interface {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+  }
+  h2 {
+    font-weight: 250;
+}
+#score{
+    font-size: 20px;
+    font-weight: 250;
+    margin-left: 5px;
+
+}
+.noselect{
+    user-select: none;
 }
 
-.borda-Game {
-    width: 80%;
-    height: 500px;
-    border: 1px solid #555;
-    margin: 0 auto;
-    background: linear-gradient(Black,#1C1C1C,#191970,#00008B)
+#Resetar{
+    font-size: 10px;
+    padding: 10px 20px;
+    background-color: var(--FontButtonColor);
+    border: none;
+    color:#212121;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#Resetar:hover {
+    background: khaki;
+    transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#Resetar svg {
+margin-left: 15px;
+}
+
+.autor{
+    width: 100%;
+    bottom: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 250px;
+  text-transform: uppercase;
+  padding-left: 40px;
+}
+
+.autor span {
+    padding-left: 20px;
+    letter-spacing: 1px;    
+}
+
+.autor h1 {
+    font-size: 25px;
+}
+
+.corpo {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
 }
