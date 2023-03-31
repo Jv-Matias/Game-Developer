@@ -1,29 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Space Ship</title>
-    <link rel="stylesheet" href="Corpo.css">
-</head>
-<body>
-<div class="principal noselect">
-    <Div id="interface">
-        <h2>SCORE:</h2>
-        <span id="score">000</span>
-    </Div>
-    
-    <div class="corpo">
-        <button id="Resetar">RESET</button>
-        <div class="canvas"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space Shooter</title>
+  </head>
+  <style>
+    body {
+      width: 100%;
+      overflow: hidden;
+      background: url(Space.png);
+      background-size: cover;
+    }
+    #board {
+      position: relative;
+      width: 500px;
+      height: 500px;
+      margin: 40px auto;
+      border: 2px solid white;
+      background-color: black;
+      overflow: hidden;
+    }
+
+    #jet {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background: url(Nave.gif);
+      background-size: contain;
+      background-repeat: no-repeat;
+      left: 50%;
+      bottom: 0px;
+    }
+
+    .bullets {
+      position: absolute;
+      bottom: 40px;
+      left: 51%;
+      width: 20px;
+      height: 20px;
+      background: url(Tiro.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    .rocks {
+      position: absolute;
+      top: 0px;
+      width: 30px;
+      height: 30px;
+      background:url(Inimigo.gif);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    #points {
+      font-size: 20px;
+    font-weight: 250;
+    margin-left: 5px;
+      position: absolute;
+      top: 0px;
+      margin: 40px;
+      opacity: 0.7;
+      font-size: 10em;
+      color: white;
+    }
+    .autor{
+   color: aliceblue;
+      width: 100%;
+    bottom: 40px;
+    display: inline-flex;
+    align-items: center ;
+    justify-content: center;
+    font-weight: 250px;
+  text-transform: uppercase;
+  padding-left: 2px;
+  
+}
+
+.autor span {
+    padding-left: 20px;
+    letter-spacing: 1px;
+}
+
+.autor h1 {
+    font-size: 25px;
+}
+
+  </style>
+  <script src="Projeto.js" defer></script>
+  <body>
+    <div id="board">
+      <div class="rocks"></div>
+      <div id="jet"></div>
     </div>
-    <div class="autor">
-        <H1>Space Ship</H1> <span>BY: João Vitor</span>
-    </div>
-</div>
-    
-    
-    <script src="Projeto.js"></script>
-</body>
+    <div id="points">00</div> 
+    <div class="autor">Joao Vitor<Span>By LEARNMUX TAMIL(YT) </Span></div>
+  </body>
 </html>
