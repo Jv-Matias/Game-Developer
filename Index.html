@@ -114,5 +114,14 @@ body {
     <div class="autor">Joao Vitor<Span>By LEARNMUX TAMIL(YT) </Span></div>
   
     <div class="Nome">Space Shooter</div>
+    <audio src="Music.mp3"></audio>
+    <button>Play</button>
+    <script>
+      const button = document.querySelector ('button')
+      button.addEventListener('click', function(){
+        const audio = document.querySelector('audio')
+        audio.play()
+      })
+    </script>
   </body>
 </html>
